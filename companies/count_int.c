@@ -39,3 +39,4 @@ int main() {
         printf("%d\n", x[i]);
     }
     return 0;
+}
