@@ -1,4 +1,5 @@
 file(GLOB SRC *.c *.cpp)
+cmake_minimum_required(VERSION 3.30)
 #add_library(IPC ${SRC})
 #add_executable(main.c)
 

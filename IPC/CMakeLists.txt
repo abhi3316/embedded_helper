@@ -1,6 +1,5 @@
 file(GLOB SRC *.c *.cpp)
-#add_library(IPC ${SRC})
-#add_executable(main.c)
+cmake_minimum_required(VERSION 3.30)
 
 foreach (SRC_FILE ${SRC}) 
 	get_filename_component(EXE_NAME ${SRC_FILE} NAME_WLE)
