@@ -4,9 +4,7 @@ cmake_minimum_required(VERSION 3.30)
 foreach (SRC_FILE ${SRC}) 
 	get_filename_component(EXE_NAME ${SRC_FILE} NAME_WLE)
 	add_executable(${EXE_NAME} ${SRC_FILE})
-	add_custom_command(TARGET ${EXE_NAME} POST_BUILD
-			COMMAND ${CMAKE_COMMAND} -E copy
-			${CMAKE_CURRENT_BINARY_DIR}/${EXE_NAME}
-			${CMAKE_BINARY_DIR}/bins/${EXE_NAME})
-	message(src_dir="${CMAKE_BINARY_DIR}")
+	set_target_properties(${EXE_NAME}
+                              PROPERTIES
+                              RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bins")
 endforeach()
