@@ -1,4 +1,4 @@
-file(GLOB SRC *.c *.cpp)
+file(GLOB SRC */*.c */*.cpp)
 cmake_minimum_required(VERSION 3.30)
 
 foreach (SRC_FILE ${SRC}) 
