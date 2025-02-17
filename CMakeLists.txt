@@ -8,6 +8,7 @@ add_subdirectory(companies)
 add_subdirectory(leetcode)
 add_subdirectory(ds)
 add_subdirectory(bit_ops)
+add_subdirectory(attr)
 
 
 
